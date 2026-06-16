@@ -1,5 +1,5 @@
 """
-Comfy desk booking automation — books desk 7s.009 via SSO (BP).
+Comfy desk booking automation — books desk 7s.009 via SSO ().
 Run manually once first to save the authenticated session to auth_state.json.
 Scheduled runs reuse that saved session so no login is needed each time.
 """
@@ -10,7 +10,7 @@ from pathlib import Path
 from playwright.async_api import async_playwright, TimeoutError as PWTimeout
 
 BOOKING_URL = "https://my.comfyapp.com/app/location"
-COMPANY_ID   = "bp"          # company slug on the first login screen
+COMPANY_ID   = ""          # company slug on the first login screen
 DESK_NAME    = "7s.009"
 AUTH_FILE    = Path(__file__).parent / "auth_state.json"
 
