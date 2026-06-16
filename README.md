@@ -1,7 +1,7 @@
 # Desk Booker — Comfy App Automation
 
 Automatically books desk **7S.009** on [my.comfyapp.com](https://my.comfyapp.com) every weekday.
-It logs in via your BP company SSO, searches for the desk, and books all available dates on the calendar in one go.
+It logs in via your  company SSO, searches for the desk, and books all available dates on the calendar in one go.
 
 ---
 
@@ -25,7 +25,7 @@ It logs in via your BP company SSO, searches for the desk, and books all availab
 | File | Purpose |
 |------|---------|
 | `book_desk.py` | Main automation script |
-| `create_task.bat` | Registers the scheduled task (blocked by BP policy — use PowerShell instead) |
+| `create_task.bat` | Registers the scheduled task (blocked by company policy — use PowerShell instead) |
 | `auth_state.json` | Your saved login session (auto-created on first login) |
 | `booking_confirmation.png` | Screenshot of last booking result |
 | `debug_screenshot.png` | Screenshot saved when something goes wrong |
@@ -62,7 +62,7 @@ python C:\Users\YOUR_USERNAME\Downloads\desk-booker\book_desk.py
 Check `booking_confirmation.png` in the desk-booker folder — it should show the booked dates highlighted in dark green.
 
 ### Step 5 — Set Up Auto-Schedule (via PowerShell)
-> Note: `.bat` files are blocked by BP group policy, so use PowerShell directly.
+> Note: `.bat` files are blocked by company group policy, so use PowerShell directly.
 
 Open PowerShell and run this single line (update YOUR_USERNAME):
 ```
