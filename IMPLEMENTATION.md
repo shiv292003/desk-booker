@@ -97,7 +97,7 @@ book_desk.py
 
 ```python
 BOOKING_URL = "https://my.comfyapp.com/app/location"
-COMPANY_ID  = "bp"
+COMPANY_ID  = "xy(company id)"
 DESK_NAME   = "7s.009"
 AUTH_FILE   = Path(__file__).parent / "auth_state.json"
 ```
@@ -383,7 +383,7 @@ Playwright can find this element multiple ways:
 
 ## 9. How SSO Login is Handled
 
-SSO (Single Sign-On) means your company (BP) controls the login.
+SSO (Single Sign-On) means your company controls the login.
 When you click "Sign in with your organization", the browser redirects to
 Microsoft's login server, which checks your Windows credentials and redirects back.
 
