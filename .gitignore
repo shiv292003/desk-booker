@@ -1,0 +1,18 @@
+# Sensitive session data - never commit this
+auth_state.json
+
+# Runtime screenshots (auto-generated)
+*.png
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+
+# OS files
+.DS_Store
+Thumbs.db
